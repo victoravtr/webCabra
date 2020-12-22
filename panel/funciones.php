@@ -10,7 +10,7 @@ function getIframeSrc() {
 }
 
 function changeVideo($request) {
-    $path_to_file = '../cabrita/index.html';
+    $path_to_file = '/var/www/cabrita/index.html';
     $src = getIframeSrc();
     $file_contents = file_get_contents($path_to_file);
     $file_contents = str_replace($src, $request,$file_contents);
@@ -19,14 +19,14 @@ function changeVideo($request) {
 
 function writeFile($contenido) {
     // $file_contents = file_get_contents('timer');
-    file_put_contents('timer', $contenido);
+    file_put_contents('../cabrita/timer', $contenido);
 }
 function getVideoJson($request) {
 
     $curl = curl_init();
     $key = getKey($request);
     curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=".$key."&key=#API_KEY",
+    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=".$key."&key=AIzaSyBH0fFeFygUsLguM8lhbwYlTHq-dszvcMo",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
