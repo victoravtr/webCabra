@@ -1,8 +1,8 @@
-# changelog
+# Changelog
 ## version: 2
 
 
--> Añadido esta ventana de cambios
+-> Añadida esta ventana de cambios
     - Con cada nueva version la web os notificara de los cambios realizados
 
 -> Ahora puedes elegir entre modo claro y oscuro.
@@ -14,7 +14,7 @@
 -> Mejorado el diseño para movil, tanto en landscape como en portrait.
 
 -> Ahora podeis ocultar el stream de cabra a la vez que manteneis el audio.
-    - Solo desde movil, podeis ocultar o mostrar el stream de cabra, maneteniendo
+    - Solo desde movil, podeis ocultar o mostrar el stream de cabra, manteniendo
       el volumen aunque se encuentre oculto.
 
--> Otras pequeñas mejoras que no vais a ver pero que prometo haber hecho.<img src="assets/images/kappa.png" alt="Kappa">
+-> Otras pequeñas mejoras que no vais a ver pero que prometo haber hecho.
