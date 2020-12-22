@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded",function () {
 function theme() {
     console.log(themePref);
     themePref = localStorage.getItem("themePref");
+	console.log("Despues: " + themePref);
     if (themePref == "dark") {
         changeTheme("light");        
         localStorage.setItem("themePref", "light");
@@ -27,7 +28,8 @@ function theme() {
 
 function checkTheme() {
     themePref = localStorage.getItem("themePref");
-    if (!themePref) {
+	console.log("hacemos el check: " + themePref);
+    if (themePref == undefined) {
         console.log(themePref);
         localStorage.setItem("themePref", "dark");
     } else {
@@ -54,11 +56,9 @@ function changeTheme(theme) {
         $(".follow").css("color", "#0e0e10");
         $(".timer-btn").css("background-color", "white");
         $(".timer-btn").css("color", "#0e0e10");
-        $(".modo-teatro").css("background-color", "white");
-        $(".modo-teatro").css("color", "#0e0e10");
         $(".acerca-container-content").css("background-color", "#BBBBBB");
         $(".info-container").css("color", "#0e0e10");
-        document.getElementById("chat-iframe").src = "https://www.twitch.tv/embed/ibai/chat?parent=localhost";
+        document.getElementById("chat-iframe").src = "https://www.twitch.tv/embed/cabramaravilla/chat?parent=cabramaravilla.com";
         localStorage.setItem("themePref", "light");
     } else {
         document.body.style.backgroundColor = "#0e0e10";
@@ -74,17 +74,15 @@ function changeTheme(theme) {
         $(".follow").css("color", "white");
         $(".timer-btn").css("background-color", "#303030");
         $(".timer-btn").css("color", "white");
-        $(".modo-teatro").css("background-color", "#303030");
-        $(".modo-teatro").css("color", "white");
         $(".acerca-container-content").css("background-color", "#303030");
         $(".info-container").css("color", "white");
-        document.getElementById("chat-iframe").src = "https://www.twitch.tv/embed/ibai/chat?darkpopout&parent=localhost";
+        document.getElementById("chat-iframe").src = "https://www.twitch.tv/embed/cabramaravilla/chat?darkpopout&parent=cabramaravilla.com";
         localStorage.setItem("themePref", "light");
     }
 }
 
 function redirect() {
-    window.open("https://twitch.tv/ibai", "_blank");
+    window.open("https://twitch.tv/cabramaravilla", "_blank");
 }
 
 function cabra() {
