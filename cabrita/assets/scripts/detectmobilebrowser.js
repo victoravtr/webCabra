@@ -3,8 +3,8 @@ $(document).ready(function () {
   console.log(check);
   var DocumentWidth = document.width;
   if (check) {
-      document.getElementById("cssFile").href = "assets/styles/m_estilo.css"
-      document.body.requestFullscreen();
+      document.getElementById("cssFile").href = "assets/styles/m_estilo.css";
+  	  document.body.requestFullscreen();
   } else {
     $(document).ready(function () {
         resizeCast();
