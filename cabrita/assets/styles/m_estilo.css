@@ -1,0 +1,636 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ./RESET CSS */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* NEW STYLES BELOW */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+html,
+body {
+  width: 100%;
+  /* position: fixed; */
+  height: 100%;
+  background-color: #0e0e10;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+a,
+iframe {
+  display: block;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+
+.header {
+  height: 46px;
+  background-color: #9147ff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 12px;
+  position: relative;
+}
+
+.social-button {
+  height: 32px;
+  border-radius: 16px;
+  padding-right: 8px;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  color: white;
+}
+
+.social-button i {
+  height: 100%;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 16px;
+  margin-right: 4px;
+  flex-direction: row-reverse;
+}
+
+/* .social-button span {} */
+
+.social-button.discord:hover {
+  background-color: #7289da;
+}
+
+.social-button.discord i {
+  background-color: #7289da;
+}
+
+.social-button.youtube:hover {
+  background-color: #ca3737;
+}
+
+.social-button.youtube i {
+  background-color: #ca3737;
+}
+
+.social-button.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.social-button.twitter i {
+  background-color: #1da1f2;
+}
+
+.twitch-actions {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  flex-direction: row-reverse;
+}
+
+.twitch-actions .img-wrap {
+  height: 36px;
+  margin-left: 24px;
+}
+
+.twitch-actions .img-wrap img {
+  height: 100%;
+}
+
+.twitch-btn {
+  height: 32px;
+  padding: 0 10px;
+  background-color: #393939;
+  border-radius: 6px;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  transition: 0.3s;
+  margin: 0 8px;
+  position: relative;
+}
+
+.twitch-btn {
+  background-color: #303030;
+  padding-left: 30px;
+}
+
+.twitch-btn i {
+  margin-right: 8px;
+  transition: 0.3s;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.twitch-btn i.filled {
+  opacity: 0;
+}
+
+.twitch-btn:hover i.filled {
+  opacity: 1;
+}
+
+.twitch-btn:hover i.empty {
+  opacity: 0;
+}
+
+/* ---------- Timer ---------- */
+
+.timer-actions {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  margin-right: 22.5%;
+}
+
+.timer-btn {
+  height: 32px;
+  padding: 0 10px;
+  background-color: #393939;
+  border-radius: 6px;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  transition: 0.3s;
+  margin: 0 8px;
+  position: relative;
+}
+
+.timer-btn {
+  background-color: #303030;
+  padding-left: 30px;
+}
+
+.timer-btn i {
+  margin-right: 8px;
+  transition: 0.3s;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.timer-btn i.filled {
+  opacity: 1;
+}
+
+.timer-btn:focus {
+  outline: 0;
+}
+/* --------------------------- */
+
+.main-container {
+  height: 100%;
+}
+
+.twitch-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cast-container {
+    width: 100%;
+    height: 40%;
+}
+
+.chat-container {
+  width: 100%;
+  height: 60%;
+}
+
+.chat-iframe {
+  width: 100%;
+  height: calc(100% - 46px);
+}
+
+
+/* --------------------------------------------------------------- */
+
+.info-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 1rem;
+  color: white;
+}
+
+.info-container a {
+  color: #a970ff;
+}
+
+.acerca-container {
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+.acerca-container-content {
+  background-color: #18181b;
+  display: flex;
+  align-items: center;
+}
+
+.acerca-container img {
+  width: 5rem;
+  padding: 1rem;
+}
+
+.acerca-container-content-text {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.acerca-container-content-text h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.paneles-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.paneles-container h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.paneles-container a img {
+  width: 100%;
+}
+
+.panel-important-links {
+  width: 47.5%;
+}
+
+.panel-important-links-text {
+  margin-top: 1rem;
+}
+
+.panel-important-links-text p {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.panel-donations {
+  width: 47.5%;
+}
+
+.panel-donations-text {
+  margin-top: 1rem;
+}
+
+.panel-donations-text p {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+/* ---------- RESPONSIVE ---------- */
+
+.twitch-actions span{
+    display: none;
+}
+
+#cabra {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.img-wrap {
+  margin-left: 20px;
+}
+
+
+.timer-actions{
+    margin-right: 0;
+} 
+
+.discord{
+    display: none;
+}
+.youtube{
+    display: none;
+}
+.twitter{
+    display: none;
+}
+
+
+.info-container {
+    display: none;
+}
+
+body {
+    position: fixed;
+}
+
+.social-alternative {
+    display: none;
+}
+
+@media (orientation: landscape) {
+  .header {
+    display: none;
+  }
+  .twitch-container {
+    flex-direction: row;
+  }
+  .cast-container {
+    width: 60%;
+    height: 100%;
+  }
+  .chat-container {
+    width: 40%;
+    height: 100%;
+  }
+  .video-secondary-iframe {
+    top: 46px;
+    height: 30% !important;
+    width: 30% !important;
+    top: 70%;
+  }
+
+  .chat-iframe {
+    height: 100% !important;
+  }
+}
+
+@media (orientation: portrait) {
+  .header {
+    display: flex;
+  }
+
+  .follow {
+    display: none;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .video-secondary-iframe {
+    height: 15% !important;
+    width: 50% !important;
+  }
+}
+      
+/* @media screen and (max-width : 980px){
+  .header {
+    justify-content: space-between;
+  }
+  .timer-actions {
+    margin-right: 0;
+  }
+
+}
+
+
+
+@media screen and (max-width : 770px){
+  .header {
+    justify-content: space-between;
+  }
+  .social-button.discord, .social-button.twitter, .social-button.youtube {
+    display: none;
+  }
+  .social-alternative {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 525px) {
+  .social-alternative span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header {
+    justify-content: center;
+  }
+  .subscribe span {
+    display: none;
+  }
+  .follow span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .social-alternative {
+    display: none;
+  }
+}  */
+/* .changelog-container {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 64, 64, 0.9);
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changelog-card {
+  background-color: #18181b;
+  width: 25%;
+  height: 75%;
+  color: white;
+}
+
+.bar {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+}
