@@ -24,7 +24,7 @@ function timer() {
 function getTimer() {
   $.ajax({
     async : false,
-    url:"../panel/timer.php",
+    url:"timer.php",
     type: "post",
     success:function(result){
       if (result) {
