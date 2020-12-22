@@ -26,7 +26,7 @@ function getVideoJson($request) {
     $curl = curl_init();
     $key = getKey($request);
     curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=".$key."&key=AIzaSyBH0fFeFygUsLguM8lhbwYlTHq-dszvcMo",
+    CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=".$key."&key=#API-KEY",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
