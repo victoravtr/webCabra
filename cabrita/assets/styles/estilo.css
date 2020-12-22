@@ -332,6 +332,7 @@ a:hover {
 .timer-btn {
   background-color: #303030;
   padding-left: 30px;
+  border-color: #303030;
 }
 
 .timer-btn i {
@@ -434,47 +435,35 @@ a:hover {
   width: 100%;
 }
 
-.panel-1 {
+.panel-important-links {
   width: 47.5%;
 }
 
-.panel-1-text {
+.panel-important-links-text {
   margin-top: 1rem;
 }
 
-.panel-1-text p {
+.panel-important-links-text p {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
 
-.panel-2 {
+.panel-donations {
   width: 47.5%;
 }
 
-.panel-2-text {
+.panel-donations-text {
   margin-top: 1rem;
 }
 
-.panel-2-text p {
+.panel-donations-text p {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
 
-.panel-3 {
-  width: 47.5%;
-}
 
-.panel-3-text {
-  margin-top: 1rem;
-}
-
-.panel-3-text p {
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.5;
-}
 
 
 
@@ -735,9 +724,4 @@ a:hover {
   .changelog-container {
     display: none;
   }
-}
-
-
-.modo-teatro i{
-  transform: rotate(180deg);
 }
