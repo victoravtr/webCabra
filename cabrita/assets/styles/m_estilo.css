@@ -518,6 +518,7 @@ body {
   .header {
     display: none;
   }
+  
   .twitch-container {
     flex-direction: row;
   }
@@ -530,10 +531,9 @@ body {
     height: 100%;
   }
   .video-secondary-iframe {
-    top: 46px;
+    top: 70%;
     height: 30% !important;
     width: 30% !important;
-    top: 70%;
   }
 
   .chat-iframe {
@@ -542,6 +542,7 @@ body {
 }
 
 @media (orientation: portrait) {
+
   .header {
     display: flex;
   }
@@ -555,7 +556,7 @@ body {
   }
 
   .video-secondary-iframe {
-    height: 15% !important;
+    height: 18% !important;
     width: 50% !important;
   }
 }
