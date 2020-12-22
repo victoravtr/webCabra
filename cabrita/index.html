@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>worlds-radio</title>
+  <title>Cabramaravilla</title>
   <link id="cssFile" rel="stylesheet" type="text/css" href="assets/styles/estilo.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/0a1581fdf5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- <script src="assets/scripts/redimension.js"></script> -->
+  <script src="assets/scripts/timer.js"></script>
   <script src="assets/scripts/theme.js"></script>
   <script src="assets/scripts/changelog.js"></script>
   <script src="assets/scripts/detectmobilebrowser.js"></script>
@@ -20,7 +24,7 @@
 
 
   <!---------- HEADER ---------->
-  <header class="header" id="header">
+  <header class="header">
 
         <!---------- BOTONES TWITCH ---------->
         <nav class="twitch-actions">
@@ -28,13 +32,13 @@
             <img id="twitch-image" src="assets/images/TwitchGlitchWhite.png">
           </div>
     
-          <a href="https://twitch.tv/ibai" target="_blank" class="twitch-btn follow">
+          <a href="https://twitch.tv/cabramaravilla" target="_blank" class="twitch-btn follow">
             <i class="far fa-heart empty"></i>
             <i class="fas fa-heart filled"></i>
             <span>Seguir</span>
           </a>
     
-          <a href="https://www.twitch.tv/subs/ibai" target="_blank" class="twitch-btn subscribe">
+          <a href="https://www.twitch.tv/subs/cabramaravilla" target="_blank" class="twitch-btn subscribe">
             <i class="far fa-star empty"></i>
             <i class="fas fa-star filled"></i>
             <span>Suscribirse</span>
@@ -42,14 +46,23 @@
 
           <a class="twitch-btn cabra">
             <input type="checkbox" id="cabra">
-            <labe>Stream ibai</label>
+            <labe>Stream Cabra</label>
           </a>
 
           <a class="twitch-btn theme" id="theme">
             <i class="fas fa-adjust fa-fw"></i>
           </a>
+
         </nav>
 
+    <!---------- TIMER ---------->
+    <nav class="timer-actions">
+    <button class="timer-btn" id="timer-btn">
+      <i id="logo" class="fas fa-sync filled"></i>
+      <span id="timer">TIMER</span>
+    </button>
+  </nav>
+  
   <nav class="social">
     <a class="social-button discord" href="https://discord.gg/7W62ZUn" target="_blank">
       <i class="fab fa-discord"></i>
@@ -59,7 +72,7 @@
       <i class="fab fa-youtube"></i>
       <span>Youtube</span>
     </a>
-    <a class="social-button twitter" href="https://twitter.com/ibai" target="_blank">
+    <a class="social-button twitter" href="https://twitter.com/cabramaravilla" target="_blank">
       <i class="fab fa-twitter"></i>
       <span>Twitter</span>
     </a>
@@ -69,14 +82,14 @@
     </a>
   </nav>
   </header>
-
+  
   <!---------- COSITAS TWITCH ---------->
   <div class="main-container">
     <div class="twitch-container">
       <div class="cast-container">
         <iframe class="video-primary-iframe" 
           id="video-primary-iframe" 
-          src="https://www.youtube.com/embed/bqIlL9cv3UU" 
+          src="https://www.youtube.com/embed/5uMWmnO1S-0" 
           frameborder="0"
           scrolling="no" 
           allowfullscreen="true" 
@@ -85,7 +98,7 @@
           width="100%">
         </iframe>
         <iframe class="video-secondary-iframe"
-          src="https://player.twitch.tv/?channel=ibai&parent=localhost&muted=false" 
+          src="https://player.twitch.tv/?channel=cabramaravilla&parent=cabramaravilla.com&muted=false" 
           id="video-secondary-iframe"
           style="margin-left: 69%"
           frameborder="0" 
@@ -97,7 +110,7 @@
       <div class="chat-container">
         <iframe class="chat-iframe" 
           id="chat-iframe"
-          src="https://www.twitch.tv/embed/ibai/chat?darkpopout&parent=localhost"
+          src="https://www.twitch.tv/embed/cabramaravilla/chat?darkpopout&parent=cabramaravilla.com"
           frameborder="0" scrolling="no">
         </iframe>
       </div>
@@ -107,41 +120,47 @@
   <div class="info-container" id="info-container">
     <div class="acerca-container">
         <div class="acerca-container-content">
-            <img src="assets/images/ibai-circle.png">
+            <img src="assets/images/cabra-circle.png">
             <div class="acerca-container-content-text">
-                <h1>Acerca de Ibai</h1>
-                <p>Creador de contenido para G2.</p>
+                <h1>Acerca de Cabramaravilla</h1>
+                <p>Creando el mejor contenido analítico en español de League of Legends o shitposteando en el chat y tirando memes, depende del humor en el que me pilles.</p>
             </div>
         </div>
     </div>
 
     <div class="paneles-container">
-      <div class="panel-1-links">
-        <div class="panel-1-text">
-          <a href="https://g2esports.com/#about" target="_blank">
-            <img src="assets/images/aboutg2.png">
-          </a>
-
-          <a href="https://g2esports.com/#about" target="_blank">
-            <img src="assets/images/twitteribai.png">
-          </a>
-
-          <a href="https://g2esports.com/#about" target="_blank">
-            <img src="assets/images/instagramibai.png">
-          </a>
-
-          <a href="https://g2esports.com/#about" target="_blank">
-            <img src="assets/images/ubeat.png">
-          </a>
-
+      <div class="panel-important-links">
+        <h1>Links importantes</h1>
+        <a href="https://p.strms.net/cabramaravilla_panel" target="_blank">
+            <img src="assets/images/raid.png">
+        </a>
+        <div class="panel-important-links-text">
+            <p>Radio Cabra se produce desde mi ignorancia para el resto de seres.</p>
+            <p>Si quieres participar envía un mail con tu historia a radiocabrainforma@gmail.com.</p>
+            <p>Mail para preguntas: <a href="mailto:radiocabrainforma@gmail.com">radiocabrainforma@gmail.com</a></p>
+            <p><a href="https://www.paypal.me/cabramaravilla" target="_blank">Paypal</a></p>
+            <p>Redes:</p>
+            <p class="links">
+                <a href="https://discord.gg/7W62ZUn" target="_blank">Discord</a>
+                <a href="https://twitter.com/sinsuenyos" target="_blank">Twitter de Radio Cabra</a>
+                <a href="https://youtube.com/channel/UCvZd1cYTpyKC_zMcW57m8fA/videos" target="_blank">Youtube</a>
+                <a href="https://open.spotify.com/show/36hiQT84OBETSAZZLTV6Qp?si=0ww_vYiMQma6koOqxbovtw" target="_blank">Spotify</a>
+                <a href="https://ivoox.com/escuchar-audios-manuel-martinez_al_20372398_1.html" target="_blank">Ivoox</a>
+            </p>
+            <p>Cuentas personales:</p>
+            <p class="links">
+                <a href="https://twitter.com/cabramaravilla" target="_blank">Twitter personal</a>
+                <a href="http://instagram.com/cabramaravilla" target="_blank">Instagram</a>
+            </p>
         </div>
     </div>
-    <div class="panel-2">
+
+    <div class="panel-donations">
         <h1>Donaciones</h1>
-        <a href="https://g2esports.com/#about" target="_blank">
+        <a href="https://www.paypal.com/paypalme/cabramaravilla" target="_blank">
             <img src="assets/images/cabra-friends.png">
         </a>
-        <div class="panel-2-text">
+        <div class="panel-donations-text">
             <p>Un día, mientras caminaba a través del desierto, una persona se tropezó con un feroz tigre. Se puso a correr, pero pronto llegó al borde de un profundo barranco.</p>
             <p>Desesperada por salvarse, descendió hasta una rama y quedo colgando sobre el fatal precipicio. Mientras se sostenía, dos ratones salieron de un agujero del acantilado y comenzaron a roer la rama.</p>
             <p>Repentinamente, notó que en la rama había una suculenta fresa silvestre. La cogió y se la puso en la boca. ¡Estaba increíblemente deliciosa!</p>
@@ -152,32 +171,10 @@
             </p>
         </div>
     </div>
-
-    <div class="panel-3-links">
-      <div class="panel-3-text">
-        <a href="https://g2esports.com/#about" target="_blank">
-          <img src="assets/images/aboutg2.png">
-        </a>
-
-        <a href="https://g2esports.com/#about" target="_blank">
-          <img src="assets/images/twitteribai.png">
-        </a>
-
-        <a href="https://g2esports.com/#about" target="_blank">
-          <img src="assets/images/instagramibai.png">
-        </a>
-
-        <a href="https://g2esports.com/#about" target="_blank">
-          <img src="assets/images/ubeat.png">
-        </a>
-
-      </div>
-  </div>
     </div>
         
 </div>
 
-<!---------- Changelog ---------->
 <div class="changelog-container" id="changelog-container">
   <div class="changelog-card">
     <div class="bar">
@@ -242,7 +239,7 @@
         <i class="fas fa-chevron-right"></i>
         Changelog completo
       </a>
-      <div class="sugerencias">
+    <div class="sugerencias">
         <p>Sugerencias: </p>
         <a href="https://discord.gg/7W62ZUn" target="_blank">discord Cabramaravilla #<i class="fas fa-globe" aria-hidden="true"></i>web </a>
       </div>
