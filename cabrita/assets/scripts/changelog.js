@@ -3,7 +3,6 @@ var last_version;
 
 document.addEventListener("DOMContentLoaded",function () {
     document.getElementById ("close").addEventListener ("click", close, false);
-    checkTheme();
 })
 
 $(document).ready(function () {
