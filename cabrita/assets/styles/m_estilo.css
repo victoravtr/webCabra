@@ -151,8 +151,6 @@ html {
   /* Firefox */
 }
 
-/* NEW STYLES BELOW */
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -161,7 +159,6 @@ body {
 html,
 body {
   width: 100%;
-  /* position: fixed; */
   height: 100%;
   background-color: #0e0e10;
   padding: 0;
@@ -182,8 +179,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-
 
 
 .header {
@@ -228,8 +223,6 @@ a:hover {
   margin-right: 4px;
   flex-direction: row-reverse;
 }
-
-/* .social-button span {} */
 
 .social-button.discord:hover {
   background-color: #7289da;
@@ -309,8 +302,6 @@ a:hover {
   opacity: 0;
 }
 
-/* ---------- Timer ---------- */
-
 .timer-actions {
   display: flex;
   align-items: center;
@@ -351,7 +342,6 @@ a:hover {
 .timer-btn:focus {
   outline: 0;
 }
-/* --------------------------- */
 
 .main-container {
   height: 100%;
@@ -379,9 +369,6 @@ a:hover {
   width: 100%;
   height: calc(100% - 46px);
 }
-
-
-/* --------------------------------------------------------------- */
 
 .info-container {
   width: 60%;
@@ -463,15 +450,6 @@ a:hover {
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
-
-
-
-
-
-
-
-
-/* ---------- RESPONSIVE ---------- */
 
 .twitch-actions span{
     display: none;
@@ -559,79 +537,4 @@ body {
     height: 18% !important;
     width: 50% !important;
   }
-}
-      
-/* @media screen and (max-width : 980px){
-  .header {
-    justify-content: space-between;
-  }
-  .timer-actions {
-    margin-right: 0;
-  }
-
-}
-
-
-
-@media screen and (max-width : 770px){
-  .header {
-    justify-content: space-between;
-  }
-  .social-button.discord, .social-button.twitter, .social-button.youtube {
-    display: none;
-  }
-  .social-alternative {
-    display: flex;
-    align-items: center;
-  }
-
-}
-
-@media screen and (max-width: 525px) {
-  .social-alternative span {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .header {
-    justify-content: center;
-  }
-  .subscribe span {
-    display: none;
-  }
-  .follow span {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .social-alternative {
-    display: none;
-  }
-}  */
-/* .changelog-container {
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  background: rgba(64, 64, 64, 0.9);
-  top: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.changelog-card {
-  background-color: #18181b;
-  width: 25%;
-  height: 75%;
-  color: white;
-}
-
-.bar {
-  display: flex;
-  width: 100%;
-  height: 10%;
-  justify-content: space-between;
 }

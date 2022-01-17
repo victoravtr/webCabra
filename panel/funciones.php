@@ -18,7 +18,6 @@ function changeVideo($request) {
 }
 
 function writeFile($contenido) {
-    // $file_contents = file_get_contents('timer');
     file_put_contents('../cabrita/timer', $contenido);
 }
 function getVideoJson($request) {

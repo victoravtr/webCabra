@@ -47,13 +47,6 @@
                 </fieldset>
             </form>
         </div>
-        <!-- <form action="admin.php" method="post">
-            <fieldset>
-                <legend>Titulo de la pagina</legend>
-                <input type="text" name="new_title" placeholder="Introducir el nuevo titulo"> <br>
-                <input type="submit" name="cambiarTitulo" value="cambiar">
-            </fieldset>            
-        </form> -->
     </div>
     <div class="streams">
         <p>Streams disponibles:</p>
@@ -100,7 +93,6 @@ if (isset($_POST['enviarRadio'])) {
         }
         echo "<p>Cambiando stream a : ".$request."</p>";
         changeVideo($view);
-        // Al cambiar el video tambien hay que cambiar el %
         changeVideoMargin($view);
     }
 }
